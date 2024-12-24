@@ -3,7 +3,7 @@ My capstone project for the Google Data Analytics Professional Certificate, a Cy
  
   By: Ajoku, Chilotam
   
-  Last Updated: 24th of December, 2024 (update ungoing)
+  Last Updated: 24th of December, 2024 (update ongoing)
 
   ## Introduction
   ## Background
