@@ -3,7 +3,7 @@ My capstone project for the Google Data Analytics Professional Certificate, a Cy
  
   By: Ajoku, Chilotam
   
-  Last Updated: 26th of December, 2024 (update ongoing)
+  Last Updated: 1st of January, 2025 (update ongoing)
 
   ## Introduction
 As part of the [Google Data Analytics Professional Certification](https://www.coursera.org/professional-certificates/google-data-analytics), I completed the capstone case study. In this case study, I was given a real-world data analysis scenario for the fictional bike sharing company. This study presented a practical data analysis situation involving the fictional bike-sharing company, Cyclistic. Assuming the role of a junior data analyst on the Cyclistic marketing team, my responsibility was to examine historical data from the company to address a specific business question. I adhered to Google's data analysis framework, which includes the steps of 'ask, prepare, process, analyze, share, and act' to conduct my analysis.
@@ -27,7 +27,54 @@ The marketing director of the company is convinced that the future success of Cy
   - Data cleaning & processing- SQL Server and Excel
   - Data visualization- Power BI
 
- 3. Process phase (Download all 12 months and export to excel, ckecked for duplicates or mistake, created column for days of the week and ride length)
- 4. Analyze phase (SQL queries, I merged all 12 months, cleaned the data, created column for month)
-5. Share phase (PowerBi) then also answer the question regarding similarities and differences between casual riders and annual members.
-6. Act phase (Reccomendation)
+### 3. Process phase (Download all 12 months and export to excel, ckecked for duplicates or mistake, created column for days of the week and ride length)
+The basis for this analysis is 2022 data and the steps for processing the data are as follow:
+
+1. Data Combining
+  
+2. Data Exploration
+
+3. Data Cleaning
+   
+5. Data Analysis
+   
+
+Data Combining: The 12 tables from January 2022 to December 2022 were stacked and combined into a single table called "Full_year_dataset". The table consists of 5,722,001 rows.
+   
+```sql
+SELECT * 
+INTO FULL_YEAR_DATASET
+FROM (
+    SELECT * FROM [dbo].[January_dataset]
+    UNION ALL
+    SELECT * FROM [dbo].[February_dataset]
+    UNION ALL
+    SELECT * FROM [dbo].[March_dataset]
+    UNION ALL
+    SELECT * FROM [dbo].[April_dataset]
+    UNION ALL
+    SELECT * FROM [dbo].[May_dataset]
+    UNION ALL
+    SELECT * FROM [dbo].[June dataset]
+    UNION ALL
+    SELECT * FROM [dbo].[July_dataset]
+    UNION ALL
+    SELECT * FROM [dbo].[August_dataset]
+    UNION ALL
+    SELECT * FROM [dbo].[September_dataset]
+    UNION ALL
+    SELECT * FROM [dbo].[October_dataset]
+    UNION ALL
+    SELECT * FROM [dbo].[November_dataset]
+    UNION ALL
+    SELECT * FROM [dbo].[December_dataset]
+);
+```
+The data type for the variables are
+
+<img width="438" alt="Data_type" src="https://github.com/user-attachments/assets/f80e4247-c6f0-403d-9cb2-44662adcd235" />
+
+
+### 5. Analyze phase (SQL queries, I merged all 12 months, cleaned the data, created column for month)
+6. Share phase (PowerBi) then also answer the question regarding similarities and differences between casual riders and annual members.
+7. Act phase (Reccomendation)
