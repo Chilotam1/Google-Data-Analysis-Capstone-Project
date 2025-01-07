@@ -3,7 +3,7 @@ My capstone project for the Google Data Analytics Professional Certificate, a Cy
  
   By: Ajoku, Chilotam
   
-  Last Updated: 1st of January, 2025 (update ongoing)
+  Last Updated: 8th of January, 2025 (update ongoing)
 
   ## Introduction
 As part of the [Google Data Analytics Professional Certification](https://www.coursera.org/professional-certificates/google-data-analytics), I completed the capstone case study. In this case study, I was given a real-world data analysis scenario for the fictional bike sharing company. This study presented a practical data analysis situation involving the fictional bike-sharing company, Cyclistic. Assuming the role of a junior data analyst on the Cyclistic marketing team, my responsibility was to examine historical data from the company to address a specific business question. I adhered to Google's data analysis framework, which includes the steps of 'ask, prepare, process, analyze, share, and act' to conduct my analysis.
@@ -36,10 +36,12 @@ The basis for this analysis is 2022 data and the steps for processing the data a
 
 3. Data Cleaning
    
-5. Data Analysis
+4. Data Analysis
    
 
-Data Combining: The 12 tables from January 2022 to December 2022 were stacked and combined into a single table called "Full_year_dataset". The table consists of 5,722,001 rows.
+##### Data Combining: 
+
+The 12 tables from January 2022 to December 2022 were stacked and combined into a single table called "Full_year_dataset". The table consists of 5,722,001 rows.
    
 ```sql
 SELECT * 
@@ -70,9 +72,84 @@ FROM (
     SELECT * FROM [dbo].[December_dataset]
 );
 ```
+##### Data Exploration: 
+
 The data type for the variables are
 
 <img width="438" alt="Data_type" src="https://github.com/user-attachments/assets/f80e4247-c6f0-403d-9cb2-44662adcd235" />
+
+After combining the 12 tables, I explored the data and flag inconsistencies for future cleaning.
+
+First, I checked for NULL or missing values. The columns start_station_name, start_station_id, end_station_name, end_station_id, end_lat, and end_lng all had NULL values. There were 1,622,582 rows containing null values in total.
+
+```sql
+SELECT *
+FROM ONE_YEAR_DATASET
+WHERE end_lat IS NULL 
+OR end_lng IS NULL
+OR start_station_name IS NULL
+OR start_station_id IS NULL
+OR end_station_name IS NULL
+OR end_station_id IS NULL
+OR end_lat IS NULL
+OR end_lng IS NULL
+```
+Secondly, I checked for duplicate rows using the primary key, ride_id. There were 823,488 duplicate rows
+
+```sql
+SELECT COUNT (ride_id) - COUNT(DISTINCT ride_id) AS duplicate
+FROM FULL_YEAR_DATASET
+```
+Thirdly, I checked for invalid or unlikely ride lengths. I chose to define this as any ride that lasted less than 1 minute or more than 24 hours. To do this, I added and updated a new column to store ride length in minutes using the following syntax
+```sql
+ALTER TABLE FULL_YEAR_DATASET
+ADD Ride_length_in_minutes INT;
+UPDATE FULL_YEAR_DATASET
+SET Ride_length_in_minutes = DATEDIFF(Minute, '00:00:00', ride_length);
+```
+Checking for invalid ride lengths using ride length in minutes column
+
+```sql
+SELECT COUNT(ride_length_in_minutes) AS shorter_than_one_minute
+FROM FULL_YEAR_DATASET
+WHERE ride_length_in_minutes < 1 -- 120,987 rides were less than 1 minutes
+```
+```sql
+SELECT COUNT(ride_length_in_minutes) AS higher_than_24hrs
+FROM FULL_YEAR_DATASET
+WHERE ride_length_in_minutes > 1440 --- No rides were more than 24 hours
+```
+The query counted 120,987 invalid ride lengths in total.
+
+Finally, I checked for invalid latitude and longitude values. There was 1 invalid start latitude values of “-73.7964782714844”.
+```sql
+select start_lat
+from FULL_YEAR_DATASET
+where start_lat > 50 OR start_lat < 35
+```
+```sql
+select start_lng
+from FULL_YEAR_DATASET
+where start_lng < -90 OR start_lng > -80 
+```
+```sql
+select end_lat
+from FULL_YEAR_DATASET
+where end_lat > 50 OR end_lat < 35
+```
+```SQL
+select end_lng
+from ONE_YEAR_DATASET
+where end_lng < -90 OR end_lng > -80
+```
+
+##### Data Cleaning: 
+
+Before analyzing the data, the dataset was cleaned by:
+
+ - Removing the trips with null values.
+ - Adding 3 columns: 'ride_length_in_mins', 'day_of_week' and 'month'.
+ - Exclusing the rides with duration less than a minute or longer than a day.
 
 
 ### 5. Analyze phase (SQL queries, I merged all 12 months, cleaned the data, created column for month)
