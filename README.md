@@ -27,14 +27,14 @@ The marketing director of the company is convinced that the future success of Cy
   - Data cleaning & processing- SQL Server and Excel
   - Data visualization- Power BI
 
-### 3. Process phase (Download all 12 months and export to excel, ckecked for duplicates or mistake, created column for days of the week and ride length)
+### 3. Process phase
 The basis for this analysis is 2022 data and the steps for processing the data are as follow:
 
-1. Data Combining
+1. [Data Combining](#data-combining)
   
-2. Data Exploration
+2. [Data Exploration](#data-exploration)
 
-3. Data Cleaning   
+3. [Data Cleaning](#data-cleaning)  
 
 #### Data Combining: 
 
