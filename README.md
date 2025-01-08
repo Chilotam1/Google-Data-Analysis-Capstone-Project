@@ -174,7 +174,9 @@ Then took the cleaned data PowerBi for analysis and the figures plotted are disp
 
 ### - Total number of rides in 2022
 The figure below shows the total number of rides carried out by Cyclistic members and casual riders in 2022.
+
 ![Total Number of rides](https://github.com/user-attachments/assets/fa317def-e537-4720-98b6-975f25aaa31f)
+
 ![Total ride](https://github.com/user-attachments/assets/276b9e59-3150-4959-bfe4-f23897abd76c)
 - The total number of rides from January 2022 to December 2022 is **5,532,775**
 - **Cyclistic members** recorded a **greater bicycle activity** than casual riders. The total rides for Cyclistic members are 3,266,968 while 2,265,807 trips for casual riders. 
@@ -183,6 +185,7 @@ The figure below shows the total number of rides carried out by Cyclistic member
 
 ### - Types of Bike
 The types of bicycles used for the trips are displayed as follow:
+
 ![Types of Bike](https://github.com/user-attachments/assets/26703a03-83e7-44ea-af45-3fb902611a53)
 - There are **three types of bicycles**: <ins>*classic, electric and docked bikes*</ins>.
 - Cyclistic members shows a higher preference for **electric bikes**.
@@ -192,17 +195,20 @@ The types of bicycles used for the trips are displayed as follow:
 
 ### - Average Ride Duration
 The average ride length is plotted against the type of users (member vs. casual):
+
 ![Average ride](https://github.com/user-attachments/assets/b516deb2-1bf3-4f14-b699-4b672cf31fb5)
 - **Cyclistic members** has an average ride length for about **12.17 minutes** whereas **casual riders** have an average ride length of **24.71 minutes**. Hence, the ride duration of Cyclistic members is lesser than casual riders.
 <br>
 
 ### - Average Ride Duration By Month
+
 ![Average ride length by Month](https://github.com/user-attachments/assets/caa57a4b-1165-4eac-879a-9add1b5fd35f)
 - The monthly average ride duration for **Cyclistic members** is the **highest** in **June** (13.43 minutes).
 - For **casual riders**, the **highest** mean trip duration is in **May** (25.24 minutes).
 <br>
 
 ### - Average Ride Duration by Day of the Week
+
 ![Average ride by day of the week](https://github.com/user-attachments/assets/465dbf79-39ff-4daf-98b8-eeeb2896be9d)
 - Generally, bike rides are **most frequented** during weekends **Saturdays and Sundays**.
 - **Cyclistic members** cycled the **longest on Sunday** with an average ride length of 13.61 minutes and the ***lowest on Tuesday** with an average ride length of 11.55 minutes.
@@ -224,6 +230,9 @@ The average ride length is plotted against the type of users (member vs. casual)
 
 ### 6. Share phase (PowerBi full visuals) then also answer the question regarding similarities and differences between casual riders and annual members.
 <img width="752" alt="Bike share visualization" src="https://github.com/user-attachments/assets/4efe4190-50eb-4d02-8447-0d078cba3345" />
+
+The similiarities and differences between Cyclistic members and casual riders were drawn from the above analysis. Thus:
+
 
 
 7. Act phase (Reccomendation)
