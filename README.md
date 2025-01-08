@@ -159,17 +159,67 @@ Before analyzing the data, the dataset was cleaned by:
 ### 4. Analyze phase (visualize each question, using charts and write a short after it, explaining the visuals)
 
 The goal of the analysis phase is to explore trends in the data and answer the business question “How do annual members and casual riders use Cyclistic bikes differently?” For the first part of my analysis, I used SQL to aggregate data into the summary statistics below; 
-> 1 Number of casual riders versus members
+
+> 1 Total number of rides
 >
-> 2 Average ride duration by member type
+> 2 Types of Bike
 >
-> 3 Average number of rides per month and day of the week by member type
+> 3 Average ride duration by member type
 >
 > 4 Average ride duration per month and day of the week by member type
 >
-> 5 Rideable type usage by member type
+> 5 Number of rides per month and day of the week by member type 
 
 Then took the cleaned data PowerBi for analysis and the figures plotted are displayed in the following:
+
+### - Total number of rides in 2022
+The figure below shows the total number of rides carried out by Cyclistic members and casual riders in 2022.
+![Total Number of rides](https://github.com/user-attachments/assets/fa317def-e537-4720-98b6-975f25aaa31f)
+- **Cyclistic members** recorded a **greater bicycle activity** than casual riders. The total rides for Cyclistic members are 3,266,968 59% while 2,265,807 trips for casual riders. 
+- **Cyclistic members** accounted for about **59%** of total rides whereas casual riders made up **41%** of total rides in 2022. 
+<br>
+
+### - Types of Bike
+The types of bicycles used for the trips are displayed as follow:
+![Types of Bike](https://github.com/user-attachments/assets/26703a03-83e7-44ea-af45-3fb902611a53)
+- There are **three types of bicycles**: <ins>*classic, electric and docked bikes*</ins>.
+- Cyclistic members shows a higher preference for **electric bikes**.
+- Cyclistic members shows a higher preference for **classic bikes**
+- Docked bicycles are mostly used by casual riders. 
+<br>
+
+### - Average Ride Duration
+The average ride length is plotted against the type of users (member vs. casual):
+![Average ride](https://github.com/user-attachments/assets/b516deb2-1bf3-4f14-b699-4b672cf31fb5)
+- **Cyclistic members** has an average ride length for about **12.17 minutes** whereas **casual riders** have an average ride length of **24.71 minutes**. Hence, the ride duration of Cyclistic members is lesser than casual riders.
+<br>
+
+### - Average Ride Duration By Month
+![Average ride length by Month](https://github.com/user-attachments/assets/caa57a4b-1165-4eac-879a-9add1b5fd35f)
+- The monthly average ride duration for **Cyclistic members** is the **highest** in **June** (13.43 minutes).
+- For **casual riders**, the **highest** mean trip duration is in **May** (25.24 minutes).
+<br>
+
+### - Average Ride Duration by Day of the Week
+![Average ride by day of the week](https://github.com/user-attachments/assets/465dbf79-39ff-4daf-98b8-eeeb2896be9d)
+- Generally, bike rides are **most frequented** during weekends **Saturdays and Sundays**.
+- **Cyclistic members** cycled the **longest on Sunday** with an average ride length of 13.61 minutes and the ***lowest on Tuesday** with an average ride length of 11.55 minutes.
+- On the other hand, **casual riders cycled the longest on Sunday** with a mean trip duration of 24.94 minutes and the **lowest on Wednesday** with an average ride length of 18.71 minutes.
+<br>
+
+### - Number of Rides by Month
+![Number of rides by Month](https://github.com/user-attachments/assets/4631f055-c1c5-4967-9858-0e8fa1bdd2cf)
+- Both Cyclistic members and casual riders have the **lowest activity**, 83,598 rides and 18,048 rides respectively in **January 2022**.
+- **Cyclistic members** have the **highest activity** (417,119 rides) in **August 2022**.
+- **Casual riders** have the **greatest activity** (395,824 rides) in **July 2022**.
+<br>
+
+### - Number of Rides by Day of the week
+![Number of rides by Days of the week](https://github.com/user-attachments/assets/e8cf06b1-22fc-40b4-bd0e-e344867cbe6b)
+- **Cyclistic members** have the **highest activity** (519,984 rides) on **Thursdays** while the **lowest activity** (377,494 rides) on **Mondays**.
+- **Casual riders** have the **highest activity** (461,673 rides) on **Saturdays** while the **least activity** (257,318 rides) on **Tuesdays**.
+<br>
+
 
 
 6. Share phase (PowerBi full visuals) then also answer the question regarding similarities and differences between casual riders and annual members.
