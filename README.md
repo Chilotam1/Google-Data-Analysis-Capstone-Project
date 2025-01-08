@@ -233,6 +233,7 @@ The average ride length is plotted against the type of users (member vs. casual)
 
 The similiarities and differences between Cyclistic members and casual riders were drawn from the above analysis. Thus:
 
+**Differences**
 
 
-7. Act phase (Reccomendation)
+7. Act phase (Recommendation)
