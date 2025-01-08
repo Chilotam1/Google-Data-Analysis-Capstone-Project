@@ -1,3 +1,4 @@
+--- Removing the trips with null values.
 --- Removing the trips with null values. A total of 1,622,582 rows were affected
 ```sql
   DELETE FROM ONE_YEAR_DATASET
