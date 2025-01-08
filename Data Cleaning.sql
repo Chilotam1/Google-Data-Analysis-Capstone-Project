@@ -1,4 +1,4 @@
---- Removing the trips with null values
+--- Removing the trips with null values. A total of 1,622,582 rows were affected
 --- I dropped columns irrelevant for my analysis
 --- I removed duplicate rows
 --- I removed invalid ride lengths with duration less than a minute or longer than a day
@@ -12,8 +12,6 @@ OR start_station_name IS NULL
 OR start_station_id IS NULL
 OR end_station_name IS NULL
 OR end_station_id IS NULL--- 1622582 rows affected
-
-A total of 1,622,582 rows were affected
 
 ALTER TABLE FULL_YEAR_DATASET
 DROP COLUMN start_station_name, start_station_id, end_station_name, end_station_id
