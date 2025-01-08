@@ -152,6 +152,6 @@ Before analyzing the data, the dataset was cleaned by:
  - Exclusing the rides with duration less than a minute or longer than a day.
 
 
-### 5. Analyze phase (SQL queries, I merged all 12 months, cleaned the data, created column for month)
-6. Share phase (PowerBi) then also answer the question regarding similarities and differences between casual riders and annual members.
+#### 5. Analyze phase (visualize each question, using charts and write a short after it, explaining the visuals)
+6. Share phase (PowerBi full visuals) then also answer the question regarding similarities and differences between casual riders and annual members.
 7. Act phase (Reccomendation)
