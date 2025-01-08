@@ -175,7 +175,9 @@ Then took the cleaned data PowerBi for analysis and the figures plotted are disp
 ### - Total number of rides in 2022
 The figure below shows the total number of rides carried out by Cyclistic members and casual riders in 2022.
 ![Total Number of rides](https://github.com/user-attachments/assets/fa317def-e537-4720-98b6-975f25aaa31f)
-- **Cyclistic members** recorded a **greater bicycle activity** than casual riders. The total rides for Cyclistic members are 3,266,968 59% while 2,265,807 trips for casual riders. 
+![Total ride](https://github.com/user-attachments/assets/276b9e59-3150-4959-bfe4-f23897abd76c)
+- The total number of rides from January 2022 to December 2022 is **5,532,775**
+- **Cyclistic members** recorded a **greater bicycle activity** than casual riders. The total rides for Cyclistic members are 3,266,968 while 2,265,807 trips for casual riders. 
 - **Cyclistic members** accounted for about **59%** of total rides whereas casual riders made up **41%** of total rides in 2022. 
 <br>
 
@@ -220,7 +222,8 @@ The average ride length is plotted against the type of users (member vs. casual)
 - **Casual riders** have the **highest activity** (461,673 rides) on **Saturdays** while the **least activity** (257,318 rides) on **Tuesdays**.
 <br>
 
+### 6. Share phase (PowerBi full visuals) then also answer the question regarding similarities and differences between casual riders and annual members.
+<img width="752" alt="Bike share visualization" src="https://github.com/user-attachments/assets/4efe4190-50eb-4d02-8447-0d078cba3345" />
 
 
-6. Share phase (PowerBi full visuals) then also answer the question regarding similarities and differences between casual riders and annual members.
 7. Act phase (Reccomendation)
