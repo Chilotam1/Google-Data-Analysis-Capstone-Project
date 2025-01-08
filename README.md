@@ -154,8 +154,8 @@ Before analyzing the data, the dataset was cleaned by:
  - I removed duplicate rows
  - I removed invalid ride lengths with duration less than a minute or longer than a day.
  - I removed invalid latitudinal row
- - Changed days of the week column from numbers to text:
- 
+ - Changed days of the week column from numbers to text
+  
 ### 4. Analyze phase (visualize each question, using charts and write a short after it, explaining the visuals)
 
 The goal of the analysis phase is to explore trends in the data and answer the business question “How do annual members and casual riders use Cyclistic bikes differently?” For the first part of my analysis, I used SQL to aggregate data into the summary statistics below; 
