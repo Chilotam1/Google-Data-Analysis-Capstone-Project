@@ -15,11 +15,11 @@ Cyclistic's marketing strategy thus far has focused on raising general awareness
 The marketing director of the company is convinced that the future success of Cyclistic relies on increasing the number of annual memberships. As a result, as junior data analysts, I have been assigned to analyze the differences in how casual riders and annual members utilize Cyclistic bikes. These insights will inform the development of a new marketing strategy aimed at converting casual riders into annual members.
   
   ## Approach/Steps
-  ### 1. Ask Phase
+  ### 1. ASK PHASE
 
 **Business Task** - Design marketing strategies aimed at converting casual riders into annual members. In this project, I will answer the business question, “how do annual members and casual riders use Cyclistic bikes differently?” I will prepare, clean, and analyze historical trip data from the January to December 2022 to understand how annual members and casual riders use Cyclistic bike-share services.
 
-### 2. Prepare phase
+### 2. PREPARE PHASE
 **Data Source:** [divvy-tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html)
  [_Note: This dataset has been made available by Motivate International Inc. under this [license](https://divvybikes.com/data-license-agreement)_]
 
@@ -27,7 +27,7 @@ The marketing director of the company is convinced that the future success of Cy
   - Data cleaning & processing- SQL Server and Excel
   - Data visualization- Power BI
 
-### 3. Process phase
+### 3. PROCESS PHASE
 The basis for this analysis is 2022 data and the steps for processing the data are as follow:
 
 1. [Data Combining](#data-combining)
@@ -156,7 +156,7 @@ Before analyzing the data, the dataset was cleaned by:
  - I removed invalid latitudinal row
  - Changed days of the week column from numbers to text
   
-### 4. Analyze phase (visualize each question, using charts and write a short after it, explaining the visuals)
+### 4. ANALYZE PHASE
 
 The goal of the analysis phase is to explore trends in the data and answer the business question “How do annual members and casual riders use Cyclistic bikes differently?” For the first part of my analysis, I used SQL to aggregate data into the summary statistics below; 
 
@@ -233,7 +233,71 @@ The average ride length is plotted against the type of users (member vs. casual)
 
 The similiarities and differences between Cyclistic members and casual riders were drawn from the above analysis. Thus:
 
-**Differences**
+**Differences:**
+
+1. Ride Volume by Membership Type:
+Cyclistic members account for a larger proportion of total rides (59%) compared to casual riders (41%).
+
+3. Bike Type Preference:
+Cyclistic members favor electric bikes (1,583,654 rides), followed by classic bikes (1,683,314 rides).
+Casual riders, on the other hand, use classic bikes less frequently (876,127 rides) than electric bikes (1,216,337 rides).
+
+5. Average Ride Length:
+Casual riders take significantly longer rides (21.74 minutes on average) compared to Cyclistic members (12.17 minutes on average).
+This trend holds across all months and days of the week, with casual riders consistently logging higher average ride durations.
+
+7. Ride Patterns by Day of the Week:
+Casual riders show increased activity during weekends (Saturday and Sunday).
+Cyclistic members, however, maintain a consistent number of rides across all weekdays, indicating more regular use for commuting or daily activities.
+
+9. Seasonal Patterns:
+Casual riders show a sharp increase in rides during summer months (e.g., June, July, and August), suggesting they are more influenced by seasonal and recreational factors.
+Cyclistic members also peak during these months but show steadier ride patterns throughout the year.
+
+**Similarities:**
+
+1. Preference for Electric Bikes:
+Both groups show a strong preference for electric bikes over classic bikes.
+2. Usage Peaks in Summer:
+Both casual riders and Cyclistic members increase their usage during the summer months, reflecting the impact of favorable weather on bike usage.
+3. Day-Specific Trends:
+Both groups experience increased activity on weekends, although the rise is more pronounced for casual riders.
 
 
-7. Act phase (Recommendation)
+### 7. ACT PHASE 
+
+To effectively convert casual riders into Cyclistic members, the marketing strategies should address the behavioral patterns of casual riders while highlighting the value proposition of becoming a member. Based on the analysis above, here are some recommendations:
+
+1. Promote Membership Benefits for Longer Rides:
+Casual riders take significantly longer rides. Highlight the cost-effectiveness of membership plans for long-duration trips by emphasizing savings and unlimited ride benefits.
+
+2. Seasonal Discounts and Promotions:
+Casual riders are highly active during summer months. Launch seasonal membership promotions in spring and early summer to capture this audience and offer trial memberships for summer.
+
+3. Weekend-Focused Membership Perks:
+Casual riders are more active on weekends. Develop weekend-specific membership options with exclusive benefits tailored for leisure riders.
+
+4. Incentivize First-Time Memberships:
+To lower the barrier to entry, offer special incentives for first-time memberships, such as discounted rates, bonus ride credits, or exclusive perks.
+
+5. Highlight Convenience for Frequent Users:
+Educate casual riders about the convenience and utility of membership for routine activities like commuting or running errands.
+
+6. Gamify Membership Engagement:
+Implement a rewards system for members, where points can be earned through frequent rides and redeemed for discounts or exclusive benefits. Introduce seasonal challenges to engage users.
+
+7. Targeted Digital Marketing and CommunicationL:
+Use location-based ads near bike stations or recreational areas to promote memberships. Send personalized emails or app notifications to casual riders offering exclusive membership discounts after their rides.
+
+8. Offer Flexible Membership Options:
+Provide monthly or pay-as-you-go membership options to reduce commitment concerns. Include incentives for upgrading to annual plans.
+
+9. Promote Environmental and Wellness Benefits:
+Appeal to eco-conscious casual riders by emphasizing the sustainability of bike-sharing and the fitness benefits of regular cycling as a member.
+
+10. Partner with Local Businesses and Events:
+Collaborate with local attractions, cafes, or events to offer exclusive member perks and organize community bike events to engage casual riders and promote memberships.
+
+### **CONCLUSION**
+
+These strategies leverage casual riders' behavior (longer rides, weekend focus, summer activity) and address their potential barriers to becoming members (cost, flexibility, and commitment). Combining seasonal promotions, personalized communication, and tailored membership plans can create a seamless conversion pipeline for casual riders.
