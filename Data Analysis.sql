@@ -12,7 +12,7 @@ Select member_casual, AVG(ride_length_in_minutes) as Average_ride_duration_in_mi
 From FULL_YEAR_DATASET
 Group by member_casual
 
---Average number of rides per month by member type--
+--Average ride duration per month by member type--
 Select Month, member_casual, AVG(ride_length_in_minutes) as average_ride_time
 From FULL_YEAR_DATASET
 Group by member_casual, month
