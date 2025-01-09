@@ -4,22 +4,36 @@ My capstone project for the Google Data Analytics Professional Certificate, a Cy
   By: Ajoku, Chilotam
   
   Last Updated: 9th of January, 2025
+---
+### Table of Content
+1. [Introduction](#introduction)
+2. [Background](#background)
+3. [Steps](#steps)
+4. [ASK PHASE](#ask-phase)
+5. [PREPARE PHASE](#prepare-phase)
+6. [PROCESS PHASE](#process-phase)
+7. [ANALYZE PHASE](#analyze-phase)
+8. [SHARE PHASE](#share-phase)
+9. [ACT PHASE](#act-phase)
+10. [Conclusion](#conclusion)
 
   ## Introduction
 As part of the [Google Data Analytics Professional Certification](https://www.coursera.org/professional-certificates/google-data-analytics), I completed the capstone case study. In this case study, I was given a real-world data analysis scenario for the fictional bike sharing company. This study presented a practical data analysis situation involving the fictional bike-sharing company, Cyclistic. Assuming the role of a junior data analyst on the Cyclistic marketing team, my responsibility was to examine historical data from the company to address a specific business question. I adhered to Google's data analysis framework, which includes the steps of 'ask, prepare, process, analyze, share, and act' to conduct my analysis.
+
   ## Background
 In 2016, Cyclistic introduced a highly successful bike-sharing program. Since its launch, the program has expanded to include 5,824 GPS-enabled bicycles, available at 692 stations across Chicago. Riders have the flexibility to unlock bikes from one station and return them to any other station within the network at any time.
 
 Cyclistic's marketing strategy thus far has focused on raising general awareness and catering to diverse customer groups. A key factor contributing to the program's success has been its flexible pricing options: single-ride passes, full-day passes, and annual memberships. Customers using single-ride or full-day passes are categorized as casual riders, while those opting for annual memberships are considered Cyclistic members.
 
 The marketing director of the company is convinced that the future success of Cyclistic relies on increasing the number of annual memberships. As a result, as junior data analysts, I have been assigned to analyze the differences in how casual riders and annual members utilize Cyclistic bikes. These insights will inform the development of a new marketing strategy aimed at converting casual riders into annual members.
-  
-  ## Approach/Steps
-  ### 1. ASK PHASE
+ 
+  ## Steps
+ 
+  ### ASK PHASE
 
 **Business Task** - Design marketing strategies aimed at converting casual riders into annual members. In this project, I will answer the business question, “how do annual members and casual riders use Cyclistic bikes differently?” I will prepare, clean, and analyze historical trip data from the January to December 2022 to understand how annual members and casual riders use Cyclistic bike-share services.
 
-### 2. PREPARE PHASE
+### PREPARE PHASE
 **Data Source:** [divvy-tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html)
  [_Note: This dataset has been made available by Motivate International Inc. under this [license](https://divvybikes.com/data-license-agreement)_]
 
@@ -27,7 +41,7 @@ The marketing director of the company is convinced that the future success of Cy
   - Data cleaning & processing- SQL Server and Excel
   - Data visualization- Power BI
 
-### 3. PROCESS PHASE
+### PROCESS PHASE
 The basis for this analysis is 2022 data and the steps for processing the data are as follow:
 
 1. [Data Combining](#data-combining)
@@ -155,8 +169,8 @@ Before analyzing the data, the dataset was cleaned by:
  - I removed invalid ride lengths with duration less than a minute or longer than a day.
  - I removed invalid latitudinal row
  - Changed days of the week column from numbers to text
-  
-### 4. ANALYZE PHASE
+
+### ANALYZE PHASE
 
 The goal of the analysis phase is to explore trends in the data and answer the business question “How do annual members and casual riders use Cyclistic bikes differently?” For the first part of my analysis, I used SQL to aggregate data into the summary statistics below; 
 
@@ -228,7 +242,8 @@ The average ride length is plotted against the type of users (member vs. casual)
 - **Casual riders** have the **highest activity** (461,673 rides) on **Saturdays** while the **least activity** (257,318 rides) on **Tuesdays**.
 <br>
 
-### 6. Share phase (PowerBi full visuals) then also answer the question regarding similarities and differences between casual riders and annual members.
+### SHARE PHASE
+
 <img width="752" alt="Bike share visualization" src="https://github.com/user-attachments/assets/4efe4190-50eb-4d02-8447-0d078cba3345" />
 
 The similiarities and differences between Cyclistic members and casual riders were drawn from the above analysis. Thus:
@@ -263,8 +278,7 @@ Both casual riders and Cyclistic members increase their usage during the summer 
 3. Day-Specific Trends:
 Both groups experience increased activity on weekends, although the rise is more pronounced for casual riders.
 
-
-### 7. ACT PHASE 
+### ACT PHASE 
 
 To effectively convert casual riders into Cyclistic members, the marketing strategies should address the behavioral patterns of casual riders while highlighting the value proposition of becoming a member. Based on the analysis above, here are some recommendations:
 
@@ -298,6 +312,6 @@ Appeal to eco-conscious casual riders by emphasizing the sustainability of bike-
 10. Partner with Local Businesses and Events:
 Collaborate with local attractions, cafes, or events to offer exclusive member perks and organize community bike events to engage casual riders and promote memberships.
 
-### **CONCLUSION**
+### **Conclusion**
 
 These strategies leverage casual riders' behavior (longer rides, weekend focus, summer activity) and address their potential barriers to becoming members (cost, flexibility, and commitment). Combining seasonal promotions, personalized communication, and tailored membership plans can create a seamless conversion pipeline for casual riders.
